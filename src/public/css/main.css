@@ -1,0 +1,774 @@
+/* Estilos para la página web de Carpintería Sayhua */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Fondo gris claro suave */
+  color: #333; /* Color de texto principal */
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  background-color: #8c7042; /* Color madera para el encabezado */
+  color: white;
+  padding: 10px 0; /* Ajuste de padding para hacer más delgado */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px; /* Tamaño de fuente del título más pequeño */
+  margin: 0;
+  letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Alinear elementos a la derecha */
+}
+
+nav ul li {
+  margin: 0 10px; /* Espacio entre elementos del menú */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px; /* Tamaño de fuente del menú más pequeño */
+  transition: all 0.3s ease; /* Transición suave */
+  padding: 8px 12px; /* Ajuste de padding para hacer más delgado */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 250px 0; /* Espacio grande */
+}
+
+.hero .btn-primary, .hero .btn-secondary {
+  padding: 10px 20px; /* Ajuste de tamaño de botones */
+  margin: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase; /* Convertir texto a mayúsculas */
+}
+
+.hero .btn-primary {
+  background-color: #2ecc71; /* Color verde para botón principal */
+}
+
+.hero .btn-secondary {
+  background-color: #3498db; /* Color azul para botón secundario */
+}
+
+.about,
+.services,
+.gallery {
+  padding: 80px 0; /* Espacio aumentado */
+  text-align: center;
+}
+
+.about h2,
+.services h2,
+.gallery h2 {
+  color: #2c3e50; /* Color azul oscuro para encabezados */
+  margin-bottom: 30px; /* Espacio inferior */
+  font-size: 36px; /* Tamaño de fuente aumentado */
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services ul li {
+  margin: 20px 0; /* Espacio entre elementos de la lista */
+  font-size: 18px; /* Tamaño de fuente ajustado */
+}
+
+.products {
+  background-color: #ffffff; /* Fondo blanco para la sección de productos */
+  padding: 50px 0;
+}
+
+.products .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products h2 {
+  font-size: 36px; /* Tamaño de fuente aumentado */
+  margin-bottom: 30px; /* Espacio inferior */
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 30px; /* Espacio inferior aumentado */
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 8px; /* Bordes redondeados más sutiles */
+  transition: transform 0.3s ease;
+}
+
+.product img:hover {
+  transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+footer {
+  background-color: #8c7042; /* Color madera para el footer */
+  color: white;
+  text-align: center;
+  padding: 50px 0; /* Espacio aumentado */
+  width: 100%;
+  clear: both;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan automáticamente */
+}
+
+.footer-column {
+  width: 30%;
+  padding: 0 20px; /* Espacio interno ajustado */
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.footer-column h3 {
+  color: white; /* Color blanco para encabezados */
+  font-size: 24px; /* Tamaño de fuente aumentado */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.footer-column p {
+  font-size: 16px; /* Tamaño de fuente para párrafos */
+  line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px; /* Espacio superior para listas */
+}
+
+.footer-column ul li {
+  margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.footer-column ul li a {
+  color: white; /* Color blanco para enlaces */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición suave de color */
+}
+
+.footer-column ul li a:hover {
+  color: #f2f2f2; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+  background-color: #8c7042; /* Color de fondo que simula la madera */
+}
+
+.navbar-brand {
+  font-size: 24px; /* Tamaño de fuente del logo */
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px; /* Tamaño de fuente más pequeño para los enlaces */
+}
+
+/* Alineación a la derecha de los enlaces */
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+
+
+    .content-box {
+        background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+        padding: 20px; /* Espacio alrededor del contenido */
+        width: 450px; /* Ancho del cuadro */
+        position: absolute; /* Posición absoluta para colocar sobre la imagen de fondo */
+        top: 35%; /* Alineación vertical en el centro */
+        left: 100px; /* Distancia desde el borde izquierdo */
+        transform: translateY(-50%); /* Ajuste para centrar verticalmente */
+    }
+
+    .content-box h2,
+    .content-box p,
+    .content-box a {
+        color: #333; /* Color del texto dentro del cuadro */
+        text-align: left; /* Alineación del texto a la izquierda */
+    }
+
+    .content-box a {
+        display: block; /* Convertir los enlaces en bloques para ocupar toda la anchura del cuadro */
+        margin-top: 10px; /* Espacio entre los botones */
+    }
+
+    ul {
+      margin: 0px;
+      padding: 0px;
+  }
+  .footer-section {
+    background: #151414;
+    position: relative;
+  }
+  .footer-cta {
+    border-bottom: 1px solid #373636;
+  }
+  .single-cta i {
+    color: #ff5e14;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+  }
+  .cta-text {
+    padding-left: 15px;
+    display: inline-block;
+  }
+  .cta-text h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .cta-text span {
+    color: #757575;
+    font-size: 15px;
+  }
+  .footer-content {
+    position: relative;
+    z-index: 2;
+  }
+  .footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+  .footer-logo img {
+      max-width: 200px;
+  }
+  .footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+        color: #7e7e7e;
+    line-height: 28px;
+  }
+  .footer-social-icon span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+  }
+  .footer-social-icon a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  .footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+  }
+  .facebook-bg{
+    background: #3B5998;
+  }
+  .twitter-bg{
+    background: #55ACEE;
+  }
+  .google-bg{
+    background: #DD4B39;
+  }
+  .footer-widget-heading h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #ff5e14;
+  }
+  .footer-widget ul li {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+  }
+  .footer-widget ul li a:hover{
+    color: #ff5e14;
+  }
+  .footer-widget ul li a {
+    color: #878787;
+    text-transform: capitalize;
+  }
+  .subscribe-form {
+    position: relative;
+    overflow: hidden;
+  }
+  .subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    color: #fff;
+  }
+  .subscribe-form button {
+      position: absolute;
+      right: 0;
+      background: #ff5e14;
+      padding: 13px 20px;
+      border: 1px solid #ff5e14;
+      top: 0;
+  }
+  .subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+  }
+  .copyright-area{
+    background: #202020;
+    padding: 25px 0;
+  }
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+  }
+  .copyright-text p a{
+    color: #ff5e14;
+  }
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .footer-menu li:hover a{
+    color: #ff5e14;
+  }
+  .footer-menu li a {
+    font-size: 14px;
+    color: #878787;
+  }
+
+
+
+    .card {
+        max-width: 500px; /* Limita el ancho máximo de la tarjeta para evitar que sea demasiado ancho */
+        margin-top: 30px; /* Espacio superior */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra más suave */
+    }
+
+    .card-header {
+        padding: 15px; /* Espacio interno del encabezado */
+    }
+
+    .form-group label {
+        font-weight: bold; /* Texto de etiqueta en negrita */
+    }
+
+    .btn-primary {
+        background-color: #4CAF50; /* Color de fondo verde */
+        border-color: #4CAF50; /* Color de borde verde */
+    }
+
+    .btn-primary:hover {
+        background-color: #45a049; /* Color de fondo verde oscuro al pasar el ratón */
+        border-color: #45a049; /* Color de borde verde oscuro al pasar el ratón */
+    }
+
+    .about {
+      background-color: rgba(247, 243, 243, 0.9); /* Fondo claro con transparencia */
+      padding: 40px; /* Espaciado interno */
+      text-align: center; /* Alinear el contenido al centro */
+  }
+  
+  .img-small {
+      width: 100px; /* Ancho deseado para la imagen pequeña */
+      margin-top: 20px; /* Espacio superior */
+  }
+
+  .products {
+    background-color: #f8f9fa; /* Fondo claro para la sección */
+    padding: 40px 0; /* Espaciado interno superior e inferior */
+    text-align: center; /* Alinear el contenido al centro */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Distribuir productos en columnas flexibles */
+    gap: 20px; /* Espacio entre productos */
+}
+
+.product {
+    background-color: white; /* Fondo blanco para cada producto */
+    border: 1px solid #dee2e6; /* Borde delgado */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Evitar desbordamiento del contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.products {
+    background-color: #f8f9fa; /* Fondo claro para la sección */
+    padding: 40px 0; /* Espaciado interno superior e inferior */
+    text-align: center; /* Alinear el contenido al centro */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Distribuir productos en columnas flexibles */
+    gap: 20px; /* Espacio entre productos */
+}
+
+.product {
+    background-color: white; /* Fondo blanco para cada producto */
+    border: 1px solid #dee2e6; /* Borde delgado */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Evitar desbordamiento del contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.2s ease; /* Transición suave al agrandar */
+    cursor: pointer; /* Cambiar cursor a puntero al pasar por encima */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Aumentar tamaño al hacer hover */
+}
+
+.product-inner {
+    position: relative;
+    height: 250px; /* Altura fija para los productos */
+}
+
+.product img {
+    width: 100%; /* Imágenes ocupan el ancho completo del contenedor */
+    height: 100%; /* Imágenes ocupan la altura completa del contenedor */
+    object-fit: cover; /* Ajustar imagen sin distorsión */
+    display: block; /* Mostrar como bloque */
+    transition: transform 0.2s ease; /* Transición suave al agrandar */
+}
+
+.product-details {
+    padding: 20px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.product h3 {
+    margin-top: 0; /* Eliminar margen superior del título */
+}
+
+.product p {
+    margin-bottom: 0; /* Eliminar margen inferior del precio */
+}
+
+/* ------------------------------------------------------- */
+/* AGREGANDO PRODUCTOS DE LA CARPITENRIA IMAGENES DE WSPP -INDEX.EJS*/
+/* ------------------------------------------------------- */
+
+.products {
+  background-color: #f8f9fa; /* Fondo claro para la sección */
+  padding: 60px 0; /* Espaciado interno superior e inferior */
+  text-align: center; /* Alinear el contenido al centro */
+}
+
+.product-grid-horizontal {
+  display: flex;
+  justify-content: center;
+  gap: 150px; /* Espacio entre productos */
+}
+
+.product {
+  background-color: white; /* Fondo blanco para cada producto */
+  border: 1px solid #dee2e6; /* Borde delgado */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Evitar desbordamiento del contenido */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  text-align: center; /* Alinear texto a la izquierda */
+  width: 200px; /* Ancho fijo para cada producto */
+  transition: transform 0.3s ease-in-out; /* Transición suave al hacer hover */
+}
+
+.product:hover {
+  transform: translateY(-5px); /* Efecto de levantamiento al hacer hover */
+}
+
+.product img {
+  width: 100%; /* Imágenes ocupan el ancho completo del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  display: block; /* Mostrar como bloque */
+  border-bottom: 1px solid #dee2e6; /* Borde inferior delgado */
+}
+
+.product-details {
+  padding: 15px; /* Espaciado interno */
+}
+
+.product h3 {
+  margin-top: 10px; /* Margen superior para el nombre del producto */
+  margin-bottom: 5px; /* Margen inferior para el nombre del producto */
+}
+
+.product p {
+  margin-bottom: 0; /* Eliminar margen inferior del precio */
+}
+
+
+
+
+/* ------------------------------------------------------- */
+/* ABOUT-SOBRE NOSOTROS*/
+/* ------------------------------------------------------- */
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* Estilos para el héroe (sección principal) */
+#hero {
+  background-image: url('img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #121111;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos para servicios */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.service {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #555;
+}
+
+/* Estilos para contacto */
+.contact-info {
+  text-align: center;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: #070707;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* En tu archivo styles.css */
+
+/* Estilos para la sección del equipo */
+.team-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.team-member {
+  width: calc(50% - 20px);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  margin-bottom: 10px;
+}
+
+/* Estilos específicos para alternar izquierda y derecha */
+.team-member.left {
+  text-align: left;
+}
+
+.team-member.right {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .team-member {
+      width: 100%;
+  }
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+

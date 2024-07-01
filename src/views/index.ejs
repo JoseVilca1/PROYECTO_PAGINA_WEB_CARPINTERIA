@@ -1,14 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%=title %></title>
+    <title>Carpintería Sayhua</title>
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="path/to/your/css/styles.css">
+
+
 </head>
 <body>
     <%- include('partials/navigation') %>
-    <h1>Bienvenido a la Carpintería Sayhua</h1>
-    <%- include('partials/footer') %>
     
+
+    <main>
+        <section id="home" class="hero" style="background-image: url('/img/imagen1.jpg');">
+            <div class="container">
+                <div class="content-box">
+                    <h2>Bienvenido a Carpintería Sayhua</h2>
+                    <p>Expertos en creación y restauración de muebles de madera de alta calidad.</p>
+        
+                    <a href="#" class="btn-primary">Shop Now</a>
+                    <a href="#" class="btn-secondary">Explore</a>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Nuestra Carpintería</h2>
+                <p>Con más de 20 años de experiencia, Carpintería Sayhua se dedica a la creación y restauración de muebles de madera de alta calidad. Nuestra misión es proporcionar a nuestros clientes productos excepcionales que combinan artesanía tradicional con diseños modernos.</p>
+                <p>Nuestro equipo está compuesto por profesionales apasionados que utilizan las mejores técnicas y materiales para asegurar que cada pieza sea única y duradera.</p>
+                
+                <!-- Imagen pequeña abajo -->
+                <img src="/img/imagen4.jpeg" alt="Logo pequeño" class="img-tall">
+        
+            </div>
+            <section class="products">
+                <div class="container">
+                    <h2>Nuestros Productos</h2>
+                    <div class="product-grid-horizontal">
+                        <div class="product">
+                            <img src="/img/imagen5.jpeg" alt="Repostero">
+                            <div class="product-details">
+                                <h3>Repostero</h3>
+                                <p>$10.00</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="/img/imagen6.jpeg" alt="Puerta">
+                            <div class="product-details">
+                                <h3>Puerta</h3>
+                                <p>$10.00</p>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="/img/imagen7.jpeg" alt="Silla">
+                            <div class="product-details">
+                                <h3>Silla</h3>
+                                <p>$10.00</p>
+                            </div>
+                        </div>
+                        <!-- Agrega más productos según sea necesario -->
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+            
+            
+    </main>
+
+
+    <%- include('partials/footer') %>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

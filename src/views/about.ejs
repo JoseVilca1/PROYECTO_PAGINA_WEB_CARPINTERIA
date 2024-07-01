@@ -1,25 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%=title %></title>
+    <title>Carpintería Sayhua - Creación y Restauración de Muebles de Madera</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluir archivos parciales para encabezado -->
+    <%- include('partials/head') %>
 </head>
 <body>
+    <!-- Incluir archivo parcial para la barra de navegación -->
     <%- include('partials/navigation') %>
-    <h1>Sobre Nostros</h1>
-    <h2>Somos Carpintería Sayhua, una empresa dedicada a la creación de puertas, mesas, sillas y todo tipo de trabajos de carpintería. Nuestra misión es ofrecer productos de la más alta calidad, combinando tradición y experiencia para satisfacer las necesidades de nuestros clientes.
-        Fundada por Wiliam Sayhua Quispe, Carpintería Sayhua ha estado en el negocio de la carpintería por más de 20 años. Desde nuestros humildes comienzos, hemos crecido gracias a nuestro compromiso con la calidad y la satisfacción del cliente.
-        Nuestros valores son la calidad, la tradición y el servicio al cliente. Creemos en la importancia de ofrecer productos que no solo sean duraderos y estéticamente agradables, sino que también reflejen la artesanía y el cuidado con los que fueron hechos.
-        Nuestro equipo está compuesto por profesionales apasionados por la carpintería. Conoce a algunos de nuestros miembros clave:
-        -Wiliam Sayhua Quispe**, CEO: Con más de 20 años de experiencia en la industria de la carpintería, Wiliam lidera la empresa con dedicación y una visión clara de excelencia.
-        -Isidro Marroquín**, Ayudante: Con más de 50 años de experiencia, Isidro aporta una valiosa sabiduría y habilidad artesanal que se refleja en cada uno de nuestros productos.
-        
-        Hemos tenido el honor de que personas con altos recursos económicos soliciten nuestros servicios de carpintería, lo que es un testimonio de la calidad y el prestigio de nuestro trabajo.
-        Estamos emocionados por el futuro y planeamos continuar expandiendo nuestra gama de productos y servicios, manteniendo siempre nuestro compromiso con la calidad y la satisfacción del cliente.
-        ¿Quieres saber más sobre nosotros? Contáctanos en [wiliamsayhuaquispe@gmail.com] o síguenos en nuestras redes sociales: [Facebook](#), [Twitter](#), [LinkedIn](#).</h2>
-        <%- include('partials/footer') %>
 
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Sobre Nosotros</h1>
+            <a href="#about" class="btn btn-primary">Conócenos</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Nuestra Historia</h2>
+            <div class="about-content">
+                <p>Con más de 20 años de experiencia, Carpintería Sayhua se dedica a proporcionar productos excepcionales que combinan artesanía tradicional con diseños modernos.</p>
+                <p>Nuestra misión es ofrecer soluciones de carpintería únicas y personalizadas, superando las expectativas de nuestros clientes en cada proyecto.</p>
+                <p>Nuestros valores se basan en la calidad, el compromiso y el respeto por la tradición artesanal, asegurando que cada pieza sea duradera y estéticamente agradable.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section">
+        <div class="container">
+            <h2>Nuestro Equipo</h2>
+            <div class="team-grid">
+                <div class="team-member left">
+                    <img src="img/team1.jpg" alt="William Sayhua Quispe">
+                    <h3>William Sayhua Quispe</h3>
+                    <p>CEO y Fundador</p>
+                    <p>Con más de 20 años de experiencia en la industria de la carpintería, William lidera la empresa con pasión y dedicación.</p>
+                </div>
+                <div class="team-member right">
+                    <img src="img/team2.jpg" alt="Isidro Marroquín">
+                    <h3>Isidro Marroquín</h3>
+                    <p>Ayudante Principal</p>
+                    <p>Con más de 50 años de experiencia, Isidro aporta una valiosa sabiduría y habilidad artesanal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <img src="img/service1.jpg" alt="Servicio 1">
+                    <h3>Diseño Personalizado</h3>
+                    <p>Nos especializamos en diseñar muebles únicos y personalizados que se adaptan a tus necesidades y estilo.</p>
+                </div>
+                <div class="service">
+                    <img src="img/service2.jpg" alt="Servicio 2">
+                    <h3>Restauración de Muebles</h3>
+                    <p>Restauramos muebles antiguos y les devolvemos su belleza y funcionalidad original.</p>
+                </div>
+                <div class="service">
+                    <img src="img/service3.jpg" alt="Servicio 3">
+                    <h3>Asesoramiento Profesional</h3>
+                    <p>Ofrecemos asesoramiento experto en la selección de materiales y acabados para tus proyectos de carpintería.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <div class="contact-info">
+                <p>¿Listo para comenzar tu proyecto? Contáctanos para más información o para solicitar un presupuesto personalizado.</p>
+                <p>Email: <a href="mailto:info@carpinteriasayhua.com">info@carpinteriasayhua.com</a></p>
+                <p>Teléfono: +123 456 789</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="social-icon"><img src="img/twitter.png" alt="Twitter"></a>
+                    <a href="#" class="social-icon"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Incluir archivo parcial para el pie de página -->
+    <%- include('partials/footer') %>
 
 </body>
 </html>
+
